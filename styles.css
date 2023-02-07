@@ -1,0 +1,119 @@
+@font-face {
+    src: url("simplifica 400.ttf");
+    font-family: 'simplifica 400';
+}
+body {
+    margin:0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+.main {
+    background-color: #F6E9A6;    
+    font-family: 'simplifica 400';
+}
+#top_el {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #BA6857;
+    height: fit-content;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+#top_el p {
+    margin: 0;
+}
+nav {
+    height: 125px;
+    font-size: calc(30px + 1.5vw);
+    min-width: 360px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    font-size: calc(30px + 1.5vw);
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin:0;
+}
+nav img {
+    z-index: 1;
+    left: 0;
+    height: 2px;
+    height: 100%;
+}
+ul li {
+    color: black;
+    padding: 1px 10px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: rgb(255, 248, 182);
+    list-style: none;
+    height: fit-content;
+    white-space: nowrap;
+    border-radius: 25px;
+}
+.topbtn:hover {
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+}
+#Current_page {
+    border-radius: 25px;
+    background-color: rgb(163, 55, 55);
+    color: whitesmoke;
+    padding: 0px 10px;
+}
+.header {
+    padding: 20px 20px;
+    background-image: url("images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg");
+    margin: 0;
+    color: rgb(180, 123, 48);
+    text-align: center;
+    justify-content: start;
+    font-size: calc(50px + 3vw);
+    max-height: 500px;
+    text-shadow: 1px 1px white;
+}
+#subheader {
+    font-size: calc(0.2px + 3.5vw);
+}
+.aboutdiv {
+    font-size: calc(12px + 2.5vw);
+    text-align: start;
+    word-spacing: 7px;
+}
+#abouthead {
+    font-size: calc(3px + 3.5vw);
+    text-align: center;
+}
+.abouttext {
+    max-width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#card1 {
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: solid 2px gray;
+}
+.side_img {
+    background-size: 100%;
+    border-radius: 30px;
+    justify-content: center;
+    max-width: 48%;
+}
+#card2 {
+    padding-top: 100px;
+}

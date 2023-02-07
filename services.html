@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="icon" href="dannydoesdrudgery\favicon_package_v0.16\apple-touch-icon.png" />
+            <title>
+                Services
+            </title>
+        </head>
+        <body>
+            <div id="side-bar">
+                this is a side bar
+            </div>
+            <div id="top_el">
+                <p>1(904)680-8947</p>
+                <P> dannydodrudgery@gmail.com</P>
+            </div>
+            <nav>
+                <img src="images/DDD logo.png">
+                <ul>
+                    <a href="index.html"><li class="topbtn">About us</li></a>
+                    <li class="topbtn" id="Current_page"><a href="services.html"></a>Services</li>
+                    <li class="topbtn">Order</li>
+                    <a href="info.html"><li class="topbtn">Log info</li></a>
+                </ul>
+                <p id="options"><a>=</a></p>
+            </nav>
+            <div class="header">
+                <div>
+                    <h2>Services</h2>
+                </div>
+            </div>
+            <a href=#hidden_element><div id="servBoxes">
+                <img class="servImg" onclick="renderHidden(carWashing)" src="images/carwash.png">
+                <img class="servImg" onclick="renderHidden(curbPainting)" src="images/curbPainting.png">
+                <img class="servImg" onclick="renderHidden(garageCleaning)" src="images/GarageShedCleaning.png">
+                <img class="servImg" onclick="renderHidden(pressureWashing)" src="images/PowerWashing.png">
+            </div></a>
+            <div id="hidden_element">
+                <h3 id="hidden_head"></h3>
+                <p id="hidden_p"></p>
+                <button id="orderbtn">Order Service</button>
+            </div>
+            
+            <script src="services.js"></script>
+        </body>
+        <style>
+            @font-face {
+                src: url("simplifica 400.ttf");
+                font-family: 'simplifica 400';
+            }
+            #side-bar {
+                margin-right: auto;
+                position: fixed;
+                background-color: #66352c;
+                right: -150px;
+                display: block;
+                height: 100vh;
+                width: 150px;
+                border-left: rgb(224, 221, 221) px solid;
+                z-index: 5;
+                transition: right 0.3s ease-out;
+            }
+            body {
+                background-color: #F6E9A6;
+                font-family: 'simplifica 400';
+                margin: 0;
+            }
+            #top_el {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                background-color: #BA6857;
+                height: fit-content;
+                font-size: 30px;
+                padding: 10px;
+                color: white;
+                margin: 0;
+            }
+            #top_el p {
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            nav {
+                height: 125px;
+                font-size: calc(30px + 1.5vw);
+                min-width: 360px;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                top: 0;
+                display: flex;
+                justify-content: space-between;
+            }
+            nav ul {
+                font-size: calc(30px + 1.5vw);
+                display:flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                margin:0;
+            }
+            nav img {
+                z-index: 1;
+                left: 0;
+                height: 2px;
+                height: 100%;
+            }
+            #options {
+                width: 100px;
+                height: 100px;
+                display: none;
+                margin: 0;
+                text-align: center;
+                font-size: 100px;
+            }
+            #options:hover {
+                cursor: pointer;
+            }
+            @media screen and (max-width: 800px) {
+                nav ul {
+                    display: none
+                }
+                #options {
+                    display: inline-block;
+                }
+            }
+            @media screen and (min-width: 800px) {
+                #side-bar {
+                    visibility: hidden;
+                }
+            }
+            ul li {
+                color: black;
+                text-decoration: none;
+                padding: 1px 10px;
+                letter-spacing: 1px;
+                border: none;
+                background-color: rgb(255, 248, 182);
+                list-style: none;
+                height: fit-content;
+                white-space: nowrap;
+                border-radius: 25px;
+            }
+            .topbtn:hover {
+                border-bottom: 3px solid gray;
+                border-left: 3px solid gray;
+            }
+            #Current_page {
+                border-radius: 25px;
+                background-color: rgb(163, 55, 55);
+                color: whitesmoke;
+                padding: 0px 10px;
+            }
+            .header {
+                padding: 20px 20px;
+                background-image: url("images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg");
+                margin: 0;
+                color: rgb(180, 123, 48);
+                text-align: center;
+                justify-content: start;
+                font-size: calc(50px + 3vw);
+                max-height: 500px;
+                text-shadow: 1px 1px white;
+            }
+            #servBoxes {
+                margin: 10px auto;
+                width: 90vw;
+                justify-content: space-around;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .servImg {
+                padding: 0;
+                width: 24%;
+                border: solid #676757 6px;
+                margin-top: 6px;
+                min-width: 300px;
+            }
+            .servImg:hover {
+                background-color: rgba(163, 55, 55, 0.527);
+                transition: all 250ms ease-in;
+            }
+
+            #hidden_element {
+                display: none;
+                padding: 10px;
+                border-radius: 30px;
+                background-color: rgb(180, 123, 48);
+                width: 90%;
+                font-size: 0;
+                margin: 15px auto;
+                text-align: center;
+            }
+            #hidden_head {
+                font-size: 120px;
+            }
+            #hidden_p {
+                text-align: start;
+                font-size: 60px;
+            } 
+            #orderbtn {
+                background-color: rgb(163, 55, 55);
+                color: white;
+                font-size: 40px;
+                border: none;
+                border-radius: 25px;
+                width: 200px;
+                height: 80px;
+                padding: 0 10px;
+                font-family: 'simplifica 400';
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            #orderbtn:hover {
+                border-bottom:#676757 solid 3px;
+                border-left:#676757 solid 3px;
+                background-color: rgba(163, 55, 55, 0.527);
+                transition: all 0.25s ease-in;
+            }
+        </style>
+    </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Put in Info</title>
+    <script src="info.js"></script>
+</head>
+<body>
+    <div id="top_el">
+        <p>1(904)680-8947</p>
+        <P> dannydodrudgery@gmail.com</P>
+    </div>
+    <nav>
+        <img src="images/DDD logo.png">
+        <ul>
+            <a href="index.html"><li class="topbtn">About us</li></a>
+            <a href="services.html"><li class="topbtn">Services</li></a>
+            <li class="topbtn">Order</li>
+            <a href="info.html"><li id="Current_page" class="topbtn">Log info</li></a>
+        </ul>
+        <p id="options"><a>=</a></p>
+    </nav>
+    <main>
+        <form action="https://formsubmit.co/dannydodrudgery@gmail.com" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="Full Name" placeholder="Enter name here">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" name="email">
+            <button id="submit-btn" type="sumbit">Submit Form</button>
+        </form>
+    </main>
+    <script src="services.js"></script>
+</body>
+<style>
+            @font-face {
+                src: url("simplifica 400.ttf");
+                font-family: 'simplifica 400';
+            }
+            * {
+                box-sizing: border-box;
+                font-family: 'simplifica 400';
+
+            }
+            body {
+                background-color: #F6E9A6;
+                font-family: 'simplifica 400';
+                margin: 0;
+            }
+            #top_el {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                background-color: #BA6857;
+                height: fit-content;
+                font-size: 30px;
+                padding: 10px;
+                color: white;
+                margin: 0;
+            }
+            #top_el p {
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            nav {
+                height: 125px;
+                font-size: calc(30px + 1.5vw);
+                min-width: 360px;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                top: 0;
+                display: flex;
+                justify-content: space-between;
+            }
+            nav ul {
+                font-size: calc(30px + 1.5vw);
+                display:flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                margin:0;
+            }
+            nav img {
+                z-index: 1;
+                left: 0;
+                height: 2px;
+                height: 100%;
+            }
+            ul li {
+                color: black;
+                text-decoration: none;
+                padding: 1px 10px;
+                letter-spacing: 1px;
+                border: none;
+                background-color: rgb(255, 248, 182);
+                list-style: none;
+                height: fit-content;
+                white-space: nowrap;
+                border-radius: 25px;
+            }
+            .topbtn:hover {
+                border-bottom: 3px solid gray;
+                border-left: 3px solid gray;
+            }
+            #Current_page {
+                border-radius: 25px;
+                background-color: rgb(163, 55, 55);
+                color: whitesmoke;
+                padding: 0px 10px;
+            }
+            #options {
+                width: 100px;
+                height: 100px;
+                display: none;
+                margin: 0;
+                text-align: center;
+                font-size: 100px;
+            }
+            #options:hover {
+                cursor: pointer;
+            }
+            select, input{
+                border: none;
+                background-color: transparent;
+                border-bottom: black solid 2px;
+                border-radius: 20px;
+                padding: 10px 20px;
+                width: 90%;
+                color: white;
+                transition: all 100ms linear;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                display: block;
+                font-size: 23px;
+            }
+            #submit-btn {
+                border: none;
+                background-color: transparent;
+                margin-top: 15px;
+                border-bottom: black solid 2px;
+                border-radius: 25px;
+                padding: 7px 20px;
+                font-size: 27px;
+                background-color: white;
+                transition: scale 100ms linear;
+            }
+            select:hover, input:hover{
+                border-bottom: white 4px solid;
+                background-color: white;
+                color: black;
+            }
+            #submit-btn:hover {
+                scale: 1.1;
+            }
+            select:hover::placeholder, input:hover::placeholder {
+                color: black;
+            }
+            ::placeholder {
+                color: white;
+            }
+            label {
+                color: white;
+                margin-right: 10px;
+                font-size: 25px;
+                margin-top: 10px;
+                border-bottom: white solid 2px;
+            }
+            form {
+                text-align: center;
+                width: 400px;
+                height: 100vh;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                background-color: rgb(80, 80, 80);
+            }
+            @media screen and (max-width: 800px) {
+                nav ul {
+                    display: none
+                }
+                #options {
+                    display: inline-block;
+                }
+            }
+            @media screen and (min-width: 800px) {
+                #side-bar {
+                    visibility: hidden;
+                }
+            }
+</style>
+</html>
